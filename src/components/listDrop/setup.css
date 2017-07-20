@@ -11,13 +11,16 @@
     border: 1px solid lavender;
   }
 
-  .fileBox.fileName {
+  .fileBox {
     position: fixed;
     bottom: 1000px;
     right: 9000px;
-    font-size: 300%;
-    text-align: left;
     border: 1px solid black;
+  }
+
+  .fileName {
+    font-size: 500%;
+    text-align: left;
   }
 
   .infoBox {
