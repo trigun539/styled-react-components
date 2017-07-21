@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
-import styles               from './styles.css';
+import styles               from './setup.css';
 import moment               from 'moment';
 import propTypes            from 'prop-types';
 import DocIcon from './word-file.png';
 import PDFIcon from './pdf-file.png';
 
-class Custom extends Component {
+
+class List extends Component {
 
   render () { // This is my fault, but you should have known
   const { fileName, date } = this.props;
   let type = '';
   let formattedDate = '';
-
 
   if (date === '') {
     formattedDate = ' ';
@@ -50,8 +50,8 @@ class Custom extends Component {
 }
 
 //need to add custom propTypes
-Custom.propTypes = {
+List.propTypes = {
   fileName: propTypes.string
   };
 
-export default Custom;
+export default List;
